@@ -1,0 +1,35 @@
+/* pages/target/target.wxss */.img{
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 800px;
+}
+.body{
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.cell{
+ position: relative;
+ top: 100px;
+}
+.btn{
+  font-size: 60rpx;
+  font-family: 楷体;
+}
+.btn1{
+  font-size:40rpx;
+  text-align:center;
+}
+.but{
+  font-size: 60rpx;
+  font-family: 楷体;
+  margin-left:300rpx;
+}
+.dream{
+  text-align:center;
+  font-family:楷体;
+  font-size:60rpx;
+  margin-top:30rpx;
+}

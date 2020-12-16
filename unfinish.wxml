@@ -1,0 +1,14 @@
+<view>
+    <image src="../../images/8.jpg" class="img"></image>
+    <view class="body">
+      <view class="top" bindtap="back">未完成</view>
+
+<view wx:for="{{list}}" wx:for-item="list" class="btn">
+  <mp-slideview buttons="{{slideButtons}}" bindbuttontap="slideButtonTap" id="{{list.flag}}" >
+  <mp-cell value="·{{list.flag}}"></mp-cell>
+</mp-slideview>
+</view>
+
+    </view>
+  </view>
+  

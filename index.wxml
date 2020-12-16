@@ -1,0 +1,17 @@
+
+<view class="contain">
+  <image src="../../images/2.jpg" mode="scaleToFill" class="img"> </image>
+ <view class="body">
+<view>
+  <picker mode="time" value="{{time}}" start="0:0" end="23:59" bindchange="bindTimeChange">
+    <view class="set">时间规划</view>
+    <view class="clock">设置闹钟：{{time}}</view>
+  </picker>
+</view>
+<view class="cell">
+<button bindtap="flag" class="btn">小目标</button>
+<button bindtap="target" class="btn">计划栈区</button>
+<button bindtap="finish" class="but">漏斗报告</button>
+</view>
+</view>
+</view>

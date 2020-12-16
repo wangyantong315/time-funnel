@@ -1,0 +1,42 @@
+/* miniprogram/pages/index/index.wxss */
+page{
+  height:100%;
+  width: 100%;
+}
+
+.img{
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 600px;
+}
+.body{
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom:0;
+  width: 100%;
+}
+.cell{
+ position: relative;
+ top: 10px;
+}
+.btn{
+  font-size: 60rpx;
+}
+.clock{
+  margin-top:10rpx;
+  display:flex;
+  justify-content:center;
+  color:brown;
+}
+.set{
+  margin-top:100rpx;
+  display:flex;
+  justify-content:center;
+  font-size:60rpx;
+}
+.but{
+  font-size:60rpx;
+  margin-top:100rpx;
+}

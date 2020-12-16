@@ -1,0 +1,17 @@
+  <view class="contain">
+    <image src="../../images/4.jpg" class="img"></image>
+  <view class="body">
+  <button bindtap="add" wx:if="{{!add}}" class="btn">添加今日计划</button>
+  <view class="btn1">（添加后左滑设置任务状态）</view>
+  <button bindtap="cancelAdd" wx:if="{{add}}" class="btn">取消添加</button>
+  <view wx:if="{{add}}">
+    <input bindinput="input" placeholder="请输入你的计划"></input>
+    <button bindtap="submit" class="btn">确定</button>
+  </view>
+  <view wx:for="{{list}}" wx:for-item="list" class="btn">
+    <mp-slideview buttons="{{slideButtons}}" bindbuttontap="slideButtonTap" id="{{list.flag}}">
+    <mp-cell value="·{{list.flag}}"></mp-cell>
+  </mp-slideview>
+  </view>
+</view>
+</view>

@@ -1,0 +1,14 @@
+<view class="today">今日愿望</view>
+<image src="../../images/1.jpg"  class="img"></image>
+
+  <button bindtap="add" wx:if="{{!add}}">So,在此立下你的flag吧！</button>
+  <button bindtap="cancelAdd" wx:if="{{add}}">取消添加</button>
+  <view wx:if="{{add}}">
+    <input bindinput="input" placeholder="请输入今日的flag"></input>
+    <button bindtap="submit">确定</button>
+  </view>
+  <view wx:for="{{list}}" wx:for-item="list">
+    <mp-slideview buttons="{{slideButtons}}" bindbuttontap="slideButtonTap" id="{{list.plan}}">
+    <mp-cell value="·{{list.plan}}"></mp-cell>
+  </mp-slideview>
+  </view>

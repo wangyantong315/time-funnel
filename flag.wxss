@@ -1,0 +1,12 @@
+/* pages/plan/plan.wxss */
+.img{
+  width: 350rpx;
+  height:300rpx;
+  display:flex;
+  justify-content: center;
+  margin-left: 200rpx;
+}
+.today{
+  text-align:center;
+  font-size:45rpx;
+}

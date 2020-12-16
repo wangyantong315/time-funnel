@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/flag/flag",
+    "pages/target/doing",
+    "pages/target/target",
+    "pages/target/finish",
+    "pages/timeList/timeList",
+    "pages/target/unfinish",
+    "pages/class/class"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "时间漏斗",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/target/finish",
+      "text": "已完成"
+    }, {
+      "pagePath": "pages/target/doing",
+      "text": "正在做"
+    }, {
+      "pagePath": "pages/target/unfinish",
+      "text": "未完成"
+    }]
+  },
+  "sitemapLocation": "sitemap.json",
+    "useExtendedLib": {
+      "kbone": true,
+      "weui": true
+    }
+}
